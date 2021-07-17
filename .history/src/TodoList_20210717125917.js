@@ -12,7 +12,7 @@ export default function TodoList({ todoList }) {
     // })
 
     todoList.map((todo) => {
-      return <Todo key={todo.id} todo={todo} />;
+      return <Todo todo={todo} />;
     })
   );
 }
