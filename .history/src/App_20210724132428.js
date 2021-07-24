@@ -9,8 +9,6 @@ function App() {
     // { id: 1, name: "Todo 1", complete: true },
   ]);
 
-  useEffect(() => {}, []);
-
   const todoNameRef = useRef();
 
   useEffect(() => {
