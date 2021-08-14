@@ -38,8 +38,9 @@ function App() {
   }
 
   function handleClearTodos() {
-    let newTodos = todos.filter((element) => element.complete === false);
-    setTodos(newTodos);
+    let x = todos.filter((element) => element.complete === false);
+
+    setTodos(x);
   }
 
   return (

@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 const LOCAL_STORAGE_KEY = "todoApp.todos";
 
 function App() {
-  const [todos, setTodos] = useState([
+  let [todos, setTodos] = useState([
     // { id: 1, name: "Todo 1", complete: true },
   ]);
 
@@ -38,8 +38,7 @@ function App() {
   }
 
   function handleClearTodos() {
-    let newTodos = todos.filter((element) => element.complete === false);
-    setTodos(newTodos);
+    todos = [];
   }
 
   return (

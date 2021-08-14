@@ -38,8 +38,13 @@ function App() {
   }
 
   function handleClearTodos() {
-    let newTodos = todos.filter((element) => element.complete === false);
-    setTodos(newTodos);
+    todos.forEach(Checker);
+
+    function Checker() {
+      if (todos.filter((element) => element.complete === true)) {
+        setTodos([]);
+      }
+    }
   }
 
   return (
